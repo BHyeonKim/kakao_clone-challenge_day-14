@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-1{
+    position: relative;
+    background-color: green;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.bg-1__fg{
+    position: absolute;
+    background-color: transparent;
+    height: 400px;
+    width: 400px;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bg-1__fg:hover{
+    background-color:#263A4B;
+}
+
+.bg-2{
+    position: relative;
+    background-color: #263A4B;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-2__fg{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    z-index: 1;
+    transition: width height 1s ease-in-out fowards;
+}
+
+.bg-2__fg:hover{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    top: 50px;
+    z-index: 1;
+}
+
